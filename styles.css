@@ -1,0 +1,10 @@
+/* Event type modifier */
+.card.warning {
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  box-shadow: 0 20px 60px rgba(239, 68, 68, 0.15);
+}
+
+/* Red accent icon */
+.card.warning .icon {
+  color: #ef4444;
+}
