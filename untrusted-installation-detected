@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Security Warning</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      color: #ff4444;
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .box {
+      max-width: 400px;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 24px;
+    }
+    p {
+      color: #ccc;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Untrusted installation detected</h1>
+    <p>This application cannot run on this device.</p>
+  </div>
+</body>
+</html>
