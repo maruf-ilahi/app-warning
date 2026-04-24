@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Security Notice</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body>
+<body data-scenario="keyboard">
   <div class="container">
 
     <div class="card warning">
 
       <div class="icon">🚨</div>
 
-      <h1>Untrusted Keyboard Detected</h1>
+      <h1 id="title">Security Restriction</h1>
 
-      <p class="subtitle">
-        This keyboard cannot be verified.
+      <p class="subtitle" id="subtitle">
+        An input method could not be verified.
       </p>
 
       <div class="divider"></div>
 
-      <p class="message">
-        For your security, access to this session has been restricted.  
-        Please uninstall the untrusted keyboard to continue. 
+      <p class="message" id="message">
+        Access to this session has been restricted for security reasons.
       </p>
 
       <div class="meta">
-        <span>Event: KEYBOARD_VERIFICATION_FAILED</span>
-        <span>Code: SEC-UI-02</span>
+        <span id="event">Event: UNKNOWN</span>
+        <span id="code">Code: N/A</span>
       </div>
 
       <a class="button" href="index.html">
@@ -39,5 +39,9 @@
     </div>
 
   </div>
+
+  <!-- Keyboard-specific logic -->
+  <script src="shield.js"></script>
 </body>
+
 </html>
