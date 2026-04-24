@@ -1,18 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Security Portal</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Security Notice</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <div class="container">
-    <div class="card">
-      <h1>System Status Portal</h1>
-      <p class="subtitle">Security event routing dashboard</p>
+    <div class="card warning">
+
+      <div class="icon">🚨</div>
+
+      <h1 id="title">Security Restriction</h1>
+
+      <p class="subtitle" id="subtitle">
+        This application session could not continue.
+      </p>
+
+      <div class="divider"></div>
+
+      <p class="message" id="message">
+        The application was closed due to a security policy.
+      </p>
+
+      <div class="meta" id="meta">
+        <span id="event">Event: —</span>
+        <span id="code">Code: —</span>
+      </div>
+
+      <!-- Debug section: useful for testing -->
+      <details class="debug">
+        <summary>Debug information</summary>
+        <pre id="debug"></pre>
+      </details>
+
+      <a class="button" href="index.html">
+        Reload
+      </a>
+
     </div>
   </div>
+
+  <script src="shield-exit.js"></script>
 </body>
+
 </html>
+``
